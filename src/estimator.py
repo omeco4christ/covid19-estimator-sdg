@@ -1,5 +1,4 @@
 import pytest
-
 name = str(input())
 avgAge = float(input())
 avgDailyIncomeInUSD = float(input())
