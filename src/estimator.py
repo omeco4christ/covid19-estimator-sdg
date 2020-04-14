@@ -25,8 +25,6 @@ data = {
   'totalHospitalBeds': totalHospitalBeds
 }
 
-
-
 DataInput = {}
 Estimate = {}
 DataInput = data
