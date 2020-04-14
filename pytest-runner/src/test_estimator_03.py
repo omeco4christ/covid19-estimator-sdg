@@ -1,28 +1,18 @@
 import pytest
 
-name = str(input())
-avgAge = float(input())
-avgDailyIncomeInUSD = float(input())
-avgDailyIncomePopulation = float(input())
-periodType = str(input())
-timeToElapse = int(input())
-reportedCases = int(input())
-population = int(input())
-totalHospitalBeds = int(input())
-
 data = {
-	'region': {
-	'name': name,
-	'avgAge': avgAge,
-	'avgDailyIncomeInUSD': avgDailyIncomeInUSD,
-	'avgDailyIncomePopulation': avgDailyIncomePopulation
+ 'region': {
+ 'name': "Africa",
+  'avgAge': 19.7,
+  'avgDailyIncomeInUSD': 5,
+  'avgDailyIncomePopulation': 0.71
   },
-  'periodType': periodType,
-  'timeToElapse': timeToElapse,
-  'reportedCases': reportedCases,
-  'population': population,
-  'totalHospitalBeds': totalHospitalBeds
-}
+  'periodType': "days",
+  'timeToElapse': 58,
+  'reportedCases': 674,
+  'population': 66622705,
+  'totalHospitalBeds': 1380614
+ }
 
 def test_challenge3():
 	assert(data['region']['avgDailyIncomeInUSD']) == data['region']['avgDailyIncomeInUSD']
